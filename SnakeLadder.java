@@ -26,9 +26,12 @@ public class SnakeLadder{
 	   
 			case 3: 
 			Player1Position = (Player1Position - dice);
+	  	  
+	  if(Player1Position<0){
+		  Player1Position = 0;
+	  }
 	  
-	  
-		 System.out.println( "Your Position after snake is" + Player1Position );
+		 System.out.println( "Your Position after snake is " + Player1Position );
 	   break;
 	   }
 	    }
