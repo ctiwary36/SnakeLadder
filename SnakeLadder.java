@@ -5,7 +5,7 @@ public class SnakeLadder{
 		System.out.println("Welcome to Snake and Ladder game");
 		
 		System.out.println("Game begins Player Position is: "+Player1Position);
-
+	while(Player1Position<=99){
 	
 		System.out.println("Player1Position is " + Player1Position);
 		int dice=(int) (Math.random() * 10) % 6+1;
@@ -35,4 +35,5 @@ public class SnakeLadder{
 	   break;
 	   }
 	    }
-}   
+		 }
+		  }
