@@ -2,6 +2,7 @@ public class SnakeLadder{
 
 	public static void main(String[] args){
 		int Player1Position = 0;
+		int count = 0;
 		System.out.println("Welcome to Snake and Ladder game");
 		
 		System.out.println("Game begins Player Position is: "+Player1Position);
@@ -9,8 +10,10 @@ public class SnakeLadder{
 	
 		System.out.println("Player1Position is " + Player1Position);
 		int dice=(int) (Math.random() * 10) % 6+1;
+		count =(count + 1);
 		Player1Position = (Player1Position + dice);
 		System.out.println("dice value is " + dice);
+
 		int opt=(int) (Math.random() * 10) % 3+1;
 		switch(opt) {
 			case 1:
@@ -37,5 +40,7 @@ public class SnakeLadder{
 	   break;
 	   }
 	    }
+		System.out.println( "Dice play number " + count );
+		
 		 }
 		  }
