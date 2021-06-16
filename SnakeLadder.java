@@ -14,13 +14,15 @@ public class SnakeLadder{
 		int opt=(int) (Math.random() * 10) % 3+1;
 		switch(opt) {
 			case 1:
-			Player1Position = dice;
 				System.out.println( "No Play You are in the same Position " +Player1Position );
 				break;
 	  
 			case 2:
-			
 				Player1Position = (Player1Position + dice);
+				  if(Player1Position>100){
+					Player1Position = (Player1Position - dice);
+					continue;
+				}
 				System.out.println( "your Position after ladder is :" + Player1Position );
 				break;
 	   
